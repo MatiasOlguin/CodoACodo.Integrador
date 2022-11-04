@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Conf Bs As</title>
+</head>
+
+<body>
+    <div class="container">
+    <section class="menu">
+        <header class="menu__header">
+            <img class="menu__header__imagen" src="img/codoacodo.png" alt="Logo Codo a codo">
+            <h1 class="menu__header__titulo">Conf Bs As</h1>
+        </header>
+
+        <ul class="menu__list">
+            <li class="menu__list__item"><a class="la-conferencia" href="#">La Conferencia</a></li>
+            <li class="menu__list__item"><a class="los-oradores" href="#">Los oradores</a></li>
+            <li class="menu__list__item"><a class= "lugar-fecha" href="#">El lugar y la fecha</a></li>
+            <li class="menu__list__item"><a class="conviertete" href="#">Conviértete en orador</a></li>
+            <li class="menu__list__item"><a class="comprar" href="#"><strong>Comprar tickets</strong></a></li>
+        </ul>
+    </section>
+
+    <section class="principal">
+            <h1 class="principal__titulo">Conf Bs As</h1>
+            <p class="principal__descripcion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quae excepturi, exercitationem itaque temporibus esse totam laborum libero tempora, asperiores veniam odit nam qui voluptas eveniet nisi placeat dignissimos sint.</p>
+            <div>
+                <input class="principal__btn transparente"  type="button" value="Quiero ser orador">
+                <input class="principal__btn verde" type="button" value="Comprar tickets">
+            </div>
+    </section>
+
+    <section class="oradores">
+            <h2 class="titulo-dividido"><span>Conoce a los</span> <br><span>oradores</span></h2>
+
+        <div class="oradores__card">
+            <img class="oradores__card__img" src="img/Card1.jpg" alt="Foto Steve Jobs">
+            <div class="oradores__card__text">
+                <div class="oradores__card__text__skills">
+                    <p class="oradores__card__text__skills--javascript">JavaScript</p>
+                    <p class="oradores__card__text__skills--react">React</p>
+                </div> 
+                <h3 class="oradores__card__text__titulo">Steve Jobs</h3>
+                <p class="oradores__card__text__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere in, temporibus ut nesciunt dolor modi corporis molestias quo consequatur magni obcaecati quod illo dolores iusto ratione nulla excepturi labore maiores.</p>
+            </div>
+        </div>
+
+        <div class="oradores__card">
+            <img class="oradores__card__img" src="img/Card2.jpg" alt="Foto Bill Gates">
+            <div class="oradores__card__text">
+                <div class="oradores__card__text__skills">
+                    <p class="oradores__card__text__skills--javascript">JavaScript</p>
+                    <p class="oradores__card__text__skills--react">React</p>
+                </div> 
+                <h3 class="oradores__card__text__titulo">Bill Gates</h3>
+                <p class="oradores__card__text__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere in, temporibus ut nesciunt dolor modi corporis molestias quo consequatur magni obcaecati quod illo dolores iusto ratione nulla excepturi labore maiores.</p>
+            </div>
+        </div>
+
+        <div class="oradores__card">
+            <img class="oradores__card__img" src="img/Card3.jpg" alt="Foto Ada Lovelace">
+            <div class="oradores__card__text">
+                <div class="oradores__card__text__skills">
+                    <p class="oradores__card__text__skills--javascript">JavaScript</p>
+                    <p class="oradores__card__text__skills--react">React</p>
+                </div> 
+                <h3 class="oradores__card__text__titulo">Ada Lovelace</h3>
+                <p class="oradores__card__text__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere in, temporibus ut nesciunt dolor modi corporis molestias quo consequatur magni obcaecati quod illo dolores iusto ratione nulla excepturi labore maiores.</p>
+            </div>
+        </div>
+    </section>
+    <section class="lugar">
+        <div class="lugar container">
+            <img src="./img/honolulu.jpg" class="lugar__foto">
+            <div class="lugar__descripcion container">
+                <h2>Bs As - Octubre</h2>
+                <p class="lugar__texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore minima eum est earum quibusdam nemo voluptatibus suscipit ea voluptatum, provident delectus explicabo officiis amet perferendis ex mollitia nulla blanditiis excepturi.</p>
+                <input class="lugar__btn transparente"  type="button" value="Conocé mas">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form container">
+        <h2 class="titulo-dividido"><span>Conviertete en un</span> <br><span>orador</span></h2>
+        <p class="contact-form__texto">Anotate como orador para una <u>charla ignite</u>. Cuentanos de que quieres hablar!</p>
+        
+        <form class="formulario">
+            <input class="nombre-completo" type="text" name="nombre" placeholder="Nombre">
+            <input class="nombre-completo" type="text" name="apellido" placeholder="Apellido">
+            
+            <textarea class="tema" placeholder="Sobre que quieres hablar?"></textarea>
+            <label for="tema">Recuerda incluir un titulo para tu charla.</label>
+            <input class="verde" type="button" value="Enviar">
+        </form>
+
+    </section>
+
+    </div>
+</body>
+</html>

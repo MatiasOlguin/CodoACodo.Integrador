@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #353a40;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.menu__header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0.6rem solid #fec900;
+}
+
+.menu__header__imagen{
+    width: 40%;
+}
+
+.menu__header__titulo{
+    color: whitesmoke;
+    font-size: 1.8rem;
+}
+
+.menu__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ 
+.menu__list__item{
+    text-align: center;
+    width: 100%;
+    list-style: none;
+    margin: 0.4em 0;
+    border-bottom: 0.2rem solid #353a40;
+}
+
+.menu__list__item:hover{
+    border-bottom: 0.2rem solid #fec900;
+}
+
+.menu__list__item a{
+    text-decoration: none;
+    color: #8a8b90;
+}
+
+.menu__list__item .la-conferencia{
+    color: whitesmoke;
+}
+
+.menu__list__item .comprar{
+    color: #28a547;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding:5% 5%;
+    width:100vw;
+    height: 60vw;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("/img/ba1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+.principal__btn{
+    width: 9rem;
+    padding: 0.4rem 0;
+    color: whitesmoke;
+}
+
+.transparente{
+    background-color:transparent;
+    border: solid 0.1rem whitesmoke;
+    border-radius: 0.2rem;
+}
+
+.verde{
+    background-color:green;
+    border: solid 0.1rem green;
+    border-radius: 0.2rem;
+}
+
+.oradores{
+    padding: 3% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-dividido{
+    line-height: 1.4rem;
+    text-align: center;
+    text-transform: uppercase;   
+}
+
+.titulo-dividido span:first-child{
+    font-weight: lighter;
+    font-size: 0.7rem;
+}
+
+.oradores__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 0.1rem gray;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.oradores__card__img{
+    width: 100%;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.oradores__card__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 1rem 0;
+}
+
+.oradores__card__text__skills{
+    display: flex;
+}
+
+.oradores__card__text__skills--javascript{
+    background-color:#ffc208;
+    color: black;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    margin-right: 0.9rem;
+    font-weight: bold;
+}
+
+.oradores__card__text__skills--react{
+    background-color:#17a2b9;
+    color: whitesmoke;
+    border-radius: 0.2rem;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+}
+
+.oradores__card__text__titulo{
+    margin-top:1rem;
+    margin-bottom: 0.25rem;
+}
+
+.lugar__foto{
+    width: 100%;
+}
+
+.lugar__descripcion{
+    color: whitesmoke;
+    padding: 5% 10%;
+    background-color: #353a40;
+}
+
+.lugar__texto{
+    margin: 0.8rem 0;
+}
+
+.lugar__btn{
+    width: 10rem;
+    padding: 0.4rem 0;
+    color: whitesmoke;
+}
+
+.contact-form{
+    padding: 3% 5%;
+}
+
+.contact-form__texto{
+    text-align: center;
+}
+
+.formulario{
+    width: 80%;
+}
+
+.nombre-completo{
+    width: 100%;
+}
+
+.tema{
+    width: 100%;
+}
