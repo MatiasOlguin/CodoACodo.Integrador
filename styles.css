@@ -1,145 +1,155 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
 }
 
-.container{
+.container {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.menu{
+.menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #353a40;
     width: 100%;
-    flex-wrap: wrap;
+    padding: 1rem 6%;
 }
 
-.menu__header{
-    width: 100%;
+.menu__header {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-bottom: 0.6rem solid #fec900;
 }
 
-.menu__header__imagen{
-    width: 40%;
+.menu__header__imagen {
+    width: 100px;
 }
 
-.menu__header__titulo{
+.menu__header__titulo {
     color: whitesmoke;
     font-size: 1.8rem;
 }
 
-.menu__list{
-    width: 100%;
+.menu__list {
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
- 
-.menu__list__item{
+
+.menu__list__item {
     text-align: center;
-    width: 100%;
     list-style: none;
-    margin: 0.4em 0;
     border-bottom: 0.2rem solid #353a40;
+    padding-left: 1rem;
 }
 
-.menu__list__item:hover{
+.menu__list__item a:hover {
     border-bottom: 0.2rem solid #fec900;
 }
 
-.menu__list__item a{
+.menu__list__item a {
     text-decoration: none;
     color: #8a8b90;
 }
 
-.menu__list__item .la-conferencia{
+.menu__list__item .la-conferencia {
     color: whitesmoke;
 }
 
-.menu__list__item .comprar{
-    color: #28a547;
+.menu__list__item .comprar {
+    color: #29a744;
 }
 
-.principal{
+.principal {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    padding:5% 5%;
-    width:100vw;
+    flex-direction:column;
+    justify-content: center;
+    align-items:flex-end;
+    text-align: end;
+    padding: 1rem 5%;
+    width: 100%;
     height: 60vw;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("./img/ba1.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/ba1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     color: whitesmoke;
 }
 
-.principal__btn{
+.principal__titulo{
+    font-size: 2rem;
+}
+
+.principal__descripcion{
+    padding: 1rem 0;
+    width: 35%;
+    line-height: 1.5;
+}
+
+.principal__btns {
+    display: flex;
+}
+
+.principal__btn {
+    margin: 0 0.5rem;
     width: 9rem;
     padding: 0.4rem 0;
     color: whitesmoke;
 }
 
-.transparente{
-    background-color:transparent;
+.transparente {
+    background-color: transparent;
     border: solid 0.1rem whitesmoke;
     border-radius: 0.2rem;
 }
 
-.verde{
-    background-color:green;
-    border: solid 0.1rem green;
+.verde {
+    background-color: #29a744;
+    border: solid 0.1rem #29a744;
     border-radius: 0.2rem;
 }
 
-.oradores{
-    padding: 3% 10%;
+.oradores {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem 5%;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.titulo-dividido{
-    line-height: 1.4rem;
+.titulo-dividido {
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 0.4rem;   
+    margin-bottom: 1rem;
 }
 
-.titulo-dividido span:first-child{
+.titulo-dividido span:first-child {
     font-weight: lighter;
     font-size: 0.7rem;
 }
 
-.oradores__card{
+.oradores__card {
+    width: 30%;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: solid 0.1rem gray;
     border-radius: 0.5rem;
-    margin: 1rem 0;
 }
 
-.oradores__card__img{
+.oradores__card__img {
     width: 100%;
     border-radius: 0.5rem 0.5rem 0 0;
 }
 
-.oradores__card__text{
+.oradores__card__text {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,83 +157,111 @@
     margin: 1rem 0;
 }
 
-.oradores__card__text__skills{
+.oradores__card__text__skills {
     display: flex;
 }
 
-.oradores__card__text__skills--javascript{
-    background-color:#ffc208;
-    color: black;
-    border-radius: 0.2rem;
-    padding: 0.2rem 0.5rem;
+.oradores__card__text__skills p:first-child {
     margin-right: 0.9rem;
-    font-weight: bold;
 }
 
-.oradores__card__text__skills--react{
-    background-color:#17a2b9;
-    color: whitesmoke;
+.oradores__card__text__skill {
     border-radius: 0.2rem;
     padding: 0.2rem 0.5rem;
     font-weight: bold;
+    color: whitesmoke;
 }
 
-.oradores__card__text__titulo{
-    margin-top:1rem;
+.oradores__card__text__skill--javascript {
+    background-color: #ffc208;
+    color: black;
+}
+
+.oradores__card__text__skill--react {
+    background-color: #17a2b9;
+    border-radius: 0.2rem;
+}
+
+.oradores__card__text__skill--negocios {
+    background-color: #6c757e;
+}
+
+.oradores__card__text__skill--startups {
+    background-color: #dd3647;
+}
+
+.oradores__card__text__titulo {
+    margin-top: 1rem;
     margin-bottom: 0.25rem;
 }
 
-.lugar__foto{
-    width: 100%;
+.lugar{
+    width: 100vw;
+    display: flex;
+}
+.lugar__foto {
+    width: 50%;
 }
 
-.lugar__descripcion{
+.lugar__descripcion {
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;
+    width: 50%;
     color: whitesmoke;
-    padding: 5% 10%;
+    padding: 1rem 1rem;
     background-color: #353a40;
 }
 
-.lugar__texto{
+.lugar__texto {
     margin: 0.8rem 0;
 }
 
-.lugar__btn{
+.lugar__btn {
     width: 10rem;
     padding: 0.4rem 0;
     color: whitesmoke;
 }
 
-.contact-form{
+.contact-form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     padding: 1rem 5%;
 }
 
-.contact-form__texto{
+.contact-form__texto {
     text-align: center;
     margin-bottom: 0.4rem;
 }
 
-
-.nombre-completo{
-    width: 100%;
-    margin-bottom: 0.4rem;
+.formulario{
+    width: 60%;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.tema{
+.nombre-completo {
+    width: 49%;
+    margin-bottom: 1rem;
+}
+
+.tema {
     width: 100%;
     height: 4rem;
     font-size: 0.8rem;
     resize: none;
 }
 
-.tema__recuerda{
+.tema__recuerda {
     color: gray;
     font-size: 0.7rem;
 }
 
-.tema__enviar{
+.tema__enviar {
     width: 100%;
     color: whitesmoke;
     background-color: #96c93e;
@@ -231,4 +269,174 @@
     border-radius: 0.2rem;
     padding: 0.4rem 0;
     margin-top: 0.4rem;
+}
+
+.footer {
+    background: linear-gradient(45deg, #1c3643, #1e5372);
+    padding: 0.5rem 0;
+}
+
+.footer__navegacion {
+    width: 100%;
+    padding: 0 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__enlace {
+    text-align: center;
+    list-style: none;
+    margin: 0.5rem 0.3rem;
+}
+
+.footer__enlace a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+
+
+@media (max-width: 375px) {
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu {
+        justify-content: center;
+        flex-wrap: wrap;
+        padding:0 0;
+    }
+
+    .menu__header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 0.6rem solid #fec900;
+    }
+
+    .menu__header__imagen {
+        width: 40%;
+    }
+
+    .menu__header__titulo {
+        color: whitesmoke;
+        font-size: 1.8rem;
+    }
+
+    .menu__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu__list__item {
+        text-align: center;
+        width: 100%;
+        list-style: none;
+        margin: 0.4em 0;
+        border-bottom: 0.2rem solid #353a40;
+    }
+
+    .menu__list__item:hover {
+        border-bottom: 0.2rem solid #fec900;
+    }
+
+    .menu__list__item a {
+        text-decoration: none;
+        color: #8a8b90;
+    }
+
+    .menu__list__item .la-conferencia {
+        color: whitesmoke;
+    }
+
+    .menu__list__item .comprar {
+        color: #29a744;
+    }
+
+    .principal {
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 5%;
+        width: 100vw;
+        height: 60vw;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/ba1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: whitesmoke;
+    }
+
+    .principal__titulo{
+        line-height: 0.4;
+        font-size:1.5rem;
+    }
+    
+    .principal__descripcion{
+        padding: 0.5rem 0;
+        width: 100%;
+    }
+
+    .oradores {
+        padding: 1rem 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titulo-dividido {
+        margin-bottom: 0.4rem;
+    }
+
+    .titulo-dividido span:first-child {
+        font-weight: lighter;
+        font-size: 0.7rem;
+    }
+
+    .oradores__card {
+        width:100%;
+        margin: 1rem 0;
+    }
+
+    .lugar{
+        flex-wrap: wrap;
+    }
+
+    .lugar__foto {
+        width: 100%;
+    }
+
+    .lugar__descripcion {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        padding: 5% 10%;
+    }
+
+    .nombre-completo {
+        width: 100%;
+        margin-bottom: 0.4rem;
+    }
+
+    .footer__navegacion {
+        justify-content: center;
+        padding: 0 10%;
+        flex-wrap: wrap;
+    }
+
+    .footer__enlace {
+        width: 30%;
+    }
 }
